@@ -147,8 +147,8 @@ function App() {
         ) {
           setAnimState(2);
         }
-        if (audio.currentTime > 17.53) {
-          audio.currentTime = 15.86;
+        if (audio.currentTime > 15) {
+          audio.currentTime = 9.4;
         }
       };
 
@@ -281,7 +281,7 @@ function App() {
       <div className="max-w-2xl mx-auto space-y-8">
         <div className="text-center">
           <h1 className="mb-2 text-4xl font-bold text-pink-500">
-            Miku Miku Beam
+            Teto Teto Synth
           </h1>
           <p
             className={`${
@@ -290,7 +290,7 @@ function App() {
                 : "text-white"
             }`}
           >
-            Because DDoS attacks are also cute and even more so when Miku does
+            Because DDoS attacks are also cute and even more so when Teto does
             them.
           </p>
         </div>
@@ -300,11 +300,11 @@ function App() {
             animState === 0 || animState === 3 ? "bg-white" : "bg-gray-950"
           }`}
         >
-          {/* Miku GIF */}
+          {/* Teto GIF */}
           <div
             className="flex justify-center w-full h-48 mb-6"
             style={{
-              backgroundImage: "url('/miku.gif')",
+              backgroundImage: "url('Teto.gif')",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -340,7 +340,7 @@ function App() {
                 `}
                 >
                   <Wand2 className="w-5 h-5" />
-                  {isAttacking ? "Stop Beam" : "Start Miku Beam"}
+                  {isAttacking ? "Stop Synth" : "Start Teto Synth"}
                 </button>
                 <button
                   onClick={() =>
@@ -529,7 +529,7 @@ function App() {
               ))}
               {logs.length === 0 && (
                 <div className="italic text-gray-500">
-                  {">"} Waiting for Miku's power...
+                  {">"} Waiting for Teto's power...
                 </div>
               )}
             </div>
@@ -550,13 +550,21 @@ function App() {
 
         <div className="flex flex-col items-center">
           <span className="text-sm text-center text-gray-500">
-            🎵 v1.0 made by{" "}
+            🎵 Made by{" "}
             <a
-              href="https://github.com/sammwyy/mikumikubeam"
+              href="https://github.com/Kasanee-Teto/TetoTetoSynth"
               target="_blank"
               rel="noreferrer"
             >
-              @Sammwy
+              @Kasanee-Teto
+            </a>{" "}
+            ️, Based on MikuMikuBeam by{" "}
+            <a
+              href="https://github.com/sammwyy/MikuMikuBeam"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @Sammwyy
             </a>{" "}
             🎵
           </span>
